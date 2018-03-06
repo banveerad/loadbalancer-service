@@ -52,28 +52,13 @@ The default settings and allowed values are listed below:
 
 It is recommended that your load balancer service and your compute instances reside locally within the same data center. The load balancer service’s graphical interface (GUI) will not show compute instances from other remote data centers. However, the GUI will include compute instances from other data centers within same city (for example, data centers whose names share the first three letters, such as DALxx. You may use the API interface to add compute instances from any remote data center though. 
 
-## Which TLS version is supported with SSL offload? Which ciphers are supported?
+## Which TLS version is supported with SSL offload?
 
 The Cloud Load Balancer Service supports TLS 1.2 with SSL termination. 
 
-The following list details the supported ciphers (listed in order of precedence):  
-
-* ECDHE-RSA-AES256-GCM-SHA384 
-* ECDHE-RSA-AES256-SHA384 
-* DHE-RSA-AES256-GCM-SHA384 
-* DHE-RSA-AES256-SHA256 
-* AES256-GCM-SHA384 
-* AES256-SHA256 
-* ECDHE-RSA-AES128-GCM-SHA256 
-* ECDHE-RSA-AES128-SHA256 
-* DHE-RSA-AES128-GCM-SHA256 
-* DHE-RSA-AES128-SHA256 
-* AES128-GCM-SHA256 
-* AES128-SHA256 
-
 ## Can I customize my SSL cipher list?
 
-Not at this time.
+Yes, you can. Please check [ssl-offload ](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/ssl-offload.html#ssl-offload)
 
 ## What is the maximum number of Load Balancer service instances I can create within my account? 
 
